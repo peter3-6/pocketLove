@@ -1,0 +1,163 @@
+page{
+	background: #f0f0f0;
+}
+.login-but{
+  border-top: 1rpx solid #fff;
+	margin-bottom: 12rpx;
+  z-index: 0;
+}
+.login-but button{
+	width: 60%;
+	height: 100rpx;
+	line-height: 100rpx;
+	letter-spacing: 20rpx;
+	background: #e4c6d4;
+	color: #fff;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+	/* height: 272rpx; */
+  background: linear-gradient(to right,rgba(211,160,185,.8), rgba(222,182,201,.4));    
+}
+.header image{
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 50%;
+  display: block;
+	/* margin:36rpx 0 0 36rpx; */
+  margin: 20rpx auto;
+	background: #fff;
+}
+.header-l{
+	width: 38%;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.header-r{
+	width: 46%;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.header-r text{
+	color: #636363;
+	display: block;
+  text-align: center;
+  /* font-size: 32rpx; */
+  font-size: 100%;
+   /* overflow: hidden;  */
+}
+.header-r-top{
+	 line-height: 460%; 
+	width: 100%;
+	height: 50%;
+	font-size: 100%;
+  border: 1rpx solid red;
+}
+.header-r-bot{
+	width: 100%;
+	height:32%;
+	line-height: 160%;
+	font-size: 100%;  
+}
+.my-row{
+	width: 100%;
+	height: 120rpx;
+	background: #fff;
+	margin:12rpx 0;
+	display: flex;
+	flex-flow: row nowrap;
+  /* padding-left: 80rpx; */
+}
+.my-row text{
+	line-height: 120rpx;
+	height: 120rpx;
+	color: #969696;
+}
+.my-order{
+	flex-grow: 10;
+  padding-left: 70rpx;
+}
+.dayuhao{
+	flex-grow: 1;
+}
+.my-row .my-row-l-img{
+	width:90rpx;
+	height: 66rpx;
+	margin: 27rpx 1% 0 6%;
+}	
+.my-row .my-row-l-img.coupon image{
+   width: 80%;
+   height: 80%;
+   margin: 10%;
+}
+.my-row .my-row-l-img image{
+	width: 100%;
+	height: 100%;
+}
+/* .my-order{
+   margin-left:2%;
+} */
+.dayuhao.about{
+  background: yellow
+}
+.shopping{
+  width: 60rpx;
+  height: 60rpx;
+  position: fixed;
+  bottom:30rpx; 
+  left:30rpx;
+}
+.img-plus-style {  
+  height: 60rpx;  
+  width: 60rpx;  
+  position: absolute;  
+  bottom: 0rpx;  
+  right: 0rpx;  
+  z-index: 100;  
+}  
+.img-text{
+    height: 60rpx;  
+  width: 150rpx;  
+  line-height: 60rpx;
+  position: absolute;  
+  bottom: 0rpx;  
+  right: 0rpx;  
+  opacity: 0;
+  /* border: 1rpx solid yellow; */
+  text-align: center;
+  background: green;
+  font-size: 90%;
+  color: #fff;
+}  
+.img-style {  
+  height: 76rpx;  
+  width: 76rpx;  
+  position: absolute;  
+  bottom: 0rpx;  
+  right: 0rpx;  
+  opacity: 0;
+  /* border: 1rpx solid #faa0ea; */
+  border-radius: 50%;
+}
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 999;
+  position: absolute;
+  top:30rpx;
+  right: 30rpx;
+}
+.icon image{
+  width: 100%;
+  height: 100%;
+  display: block
+}
+.header-bot.header-r{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}

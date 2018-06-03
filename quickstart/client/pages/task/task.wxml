@@ -1,0 +1,71 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">待处理</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已完成</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange" style="height:{{deviceHeight}}px;">
+  <!-- 待处理 -->
+  <swiper-item>
+    <view>
+      <block wx:for="{{data}}">
+        <!--以文字的形式上传的任务  -->
+        <!-- <navigator wx:if="{{item.missionType=='文本'}}" url="../upTaskText/upTaskText?activityConfigureId={{item.activityConfigureId}}&missionId={{item.missionId}}&missionType={{item.missionType}}&missionName={{item.missionName}}&imgPath={{item.imgPath}}">  -->
+        <!--以图片的形式上传的任务  -->
+        <navigator wx:if="{{item.missionType=='文本'}}" url="../upTaskText/upTaskText?activityConfigureId={{item.activityConfigureId}}&missionId={{item.missionId}}&missionType={{item.missionType}}&missionName={{item.missionName}}&imgPath={{item.imgPath}}">
+          <view id='wrap-content' bind:tap="taskDetails" style='border-bottom: 2rpx solid #e5e5e5;'>
+            <view class='centre'>
+              <text class='text-top'>{{item.fdOrder}}：{{item.missionName}}</text>
+            </view>
+            <view class='right'>
+              <button class="mini-btn" size="mini">查看详情</button>
+            </view>
+          </view>
+        </navigator>
+        <navigator wx:if="{{item.missionType=='图片'}}" url="../upTaskImg/upTaskImg?activityConfigureId={{item.activityConfigureId}}&missionId={{item.missionId}}&missionType={{item.missionType}}&missionName={{item.missionName}}&imgPath={{item.imgPath}}">
+          <view id='wrap-content' bind:tap="taskDetails">
+            <view class='centre'>
+              <text class='text-top'>{{item.fdOrder}}：{{item.missionName}}</text>
+            </view>
+            <view class='right'>
+              <button class="mini-btn" size="mini">查看详情</button>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </swiper-item>
+  <!-- 已完成 -->
+  <swiper-item>
+    <scroll-view scroll-y="true" style="height:{{deviceHeight}}px;" bindscrolltolower="loadMore" scroll-top="{{scroll_top}}" scroll-with-animation="{{true}}">
+      <block wx:for="{{datas}}">
+        <!-- 已完成任务的列表链接 -->
+        <!-- <navigator url="/pages/taskDetails/taskDetails?fdId={{item.fdId}}&missionType={{item.fdMission.missionType}}" hover-stay-time="{{600000}}"> -->
+          <form bindsubmit="formSubmit" report-submit>
+            <button id='fromBut' formType="submit">
+              <!-- <navigator url="{{aaa}}">  -->
+              <view id='wrap-content' data-fdId="{{item.fdId}}" data-missionType="{{item.fdMission.missionType}}" bindtap="detail">
+                <view class='centre'>
+                  <text class='text-top'>{{item.fdActivityConfigure.fdOrder}}：{{item.fdMission.missionName}}</text>
+                </view>
+                <view class='right'>
+                  <!-- <button class="mini-btn" size="mini" formType="submit">查看详情</button>    -->
+                  <view>查看详情</view>
+                </view>
+              </view>
+              <!-- </navigator>   -->
+            </button>
+          </form>
+        <!-- </navigator> -->
+      </block>
+      <!-- </view> -->
+      <!-- <view class="loading">
+        <loading hidden="{{switch}}">
+          正在加载中...
+        </loading>
+        <view class="remind" hidden="{{remindHidden}}">{{remind}}</view>
+      </view> -->
+    </scroll-view>
+  </swiper-item>
+</swiper>
+<!--  + 号 -->
+<import src='../template/template.wxml'></import>
+<template is='shopping' data="{{animCollect,toIndexPage,animationcollectA,messageImg,animationcollectB,messageTap,animInput,myGiftListImg,giveList,myGiftListTap,animTranspond,animationcollectC,plus,animPlus,plusTap}}"></template>

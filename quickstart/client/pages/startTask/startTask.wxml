@@ -1,0 +1,44 @@
+<!-- 开始任务页面 -->
+   <import src='../template/template.wxml'></import>
+<image class='taskGenter' style='position: absolute;z-index:1' src="/images/taskGenter.png"></image>
+<view id='startTaskBg'>
+   <view class='task-user' style='margin-top:0rpx;padding-top:0px; position: absolute; top:30px;left:4%;z-index:0'> 
+    <view class="left top">
+      <image class='image' src="{{headImgA}}"></image>
+    </view>
+    <view class="right top">
+   <!-- <import src='../template/template.wxml'></import> -->
+      <template is='taskInfo' data="{{...taskInfo,...userInfoA,headImgA}}"></template>
+    </view>
+  </view>
+  <view class='task-user' style='margin-top:0rpx;padding-top:0px; position: absolute; top:480rpx;left:4%;z-index:0'>
+    <view class="left bot">
+      <!-- <import src='../template/template.wxml'></import> -->
+      <template is='taskInfoo' data="{{...taskInfo,...userInfoB,headImgB}}"></template>
+    </view>
+    <view class="right bot">
+      <image class='image' src="{{headImgB}}"></image>
+    </view>
+  </view>
+</view>
+<text class="pp-daojishi task" style="display: {{djstDisplay}}">距<text id="djsText">任务开始</text>时间还有：<text class="start" style="display: {{startDisplay}}"> {{ start }}</text><text style="display: {{display}}">{{day}}</text>{{d}}<text style="display: {{display}}">{{hour}}</text>{{h}}<text style="display: {{display}}">{{minute}}</text>{{min}}<text style="display: {{display}}">{{second}}</text>{{sec}}</text>
+<view id='btn'>
+  <button class='btn' bind:tap="startEnroll" disabled='{{disabled}}' style="color: {{color}}">开始任务</button>
+</view>
+<!--  + 号 -->
+<import src='../template/template.wxml'></import>
+<template is='shopping' data="{{animCollect,toIndexPage,animationcollectA,messageImg,animationcollectB,messageTap,animInput,myGiftListImg,giveList,myGiftListTap,animTranspond,animationcollectC,plus,animPlus,plusTap}}"></template>
+<!-- 开始任务页面交互效果 -->
+<view class="mask mask-bg" hidden="{{mask}}">
+  <image src="https://koudaizhilian-1254460722.cosbj.myqcloud.com/images/startTask.png" bind:tap="{{taskImgTap}}"></image>
+</view>
+<!-- 送、收礼物显示效果 -->
+<view class="mask mask-bg" hidden="{{givingGift}}" bind:tap="{{givingGiftTap}}">
+  <view class="giving-gift-img">
+    <image src="{{givingGiftImg}}"></image>
+  </view>
+  <text class="giving-gift-text"> {{givingGiftText}} </text>
+</view>
+<!-- 系统小贴士 -->
+<import src='../template/template.wxml'></import>
+<template is='alumnus' data="{{modal,background,regCueT,regCueB,modalTap}}"></template>

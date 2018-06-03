@@ -1,0 +1,488 @@
+#djsText{
+  font-size: 120%;
+  font-size: 140%;
+  display: inline-block;
+  background: transparent;
+  color: #6e3181;
+  color: #ffb403;
+}
+/*顶部选项卡*/
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #e4c6d4;
+  text-align: center;
+  line-height: 80rpx;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background: #fff;
+}
+.swiper-tab-list {
+  font-size: 40rpx;
+  display: inline-block;
+  width: 50%;
+  color: #000;
+}
+.on {
+  color: #e4c6d4;
+  border-bottom: 5rpx solid #e4c6d4;
+}
+/*个人名片*/
+image {
+  display: block;
+}
+.headImg {
+  width: 100%;
+  height: 460rpx;
+}
+.an-crown {
+  width: 168rpx;
+  height: 81rpx;
+  margin: 0 auto;
+  margin-top: 6rpx;
+}
+
+.nickName {
+  width: 100%;
+  line-height: 46rpx;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-top: 6rpx;
+}
+
+#charm-value {
+  width: 446rpx;
+  height: 88rpx;
+  overflow: hidden;
+  margin: 0 auto;
+  border-top: 2rpx solid #d0cbd2;
+  border-bottom: 2rpx solid #d0cbd2;
+  margin-top: 6rpx;
+}
+
+#charm-value view {
+  width: 49%;
+  height: 100%;
+  line-height: 88rpx;
+  font-size: 126%;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+.charm {
+  color: #6e3181;
+}
+
+.nickName, .charm-value {
+  color: #ffb403;
+}
+
+.icon.w {
+  width: 56%;
+  height: 46rpx;
+  margin: 10rpx auto;
+}
+
+.w {
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+}
+
+.icon image {
+  width: 46rpx;
+  height: 46rpx;
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  /* border: 1rpx solid red; */
+}
+
+.icon text {
+  width: 94%;
+  height: 46rpx;
+  line-height: 46rpx;
+  font-size: 32rpx;
+  font-family: monospace;
+  display: block;
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+  padding-left: 10rpx;
+}
+
+.pp-daojishi {
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  margin: 3rpx auto;
+  display: block;
+  text-align: center;
+}
+
+.pp-daojishi text {
+  background: #e4c6d4;
+  color: #fff;
+  color: #76777b;
+  padding: 2rpx 2rpx;
+}
+
+#btn {
+   width: 600rpx;
+   margin: 20rpx auto 0 auto;
+}
+
+.btn {
+   height: 88rpx;
+   line-height: 88rpx;
+   width: 100%;
+   background: #e4c6d4;
+   margin-bottom: 16rpx;
+   color: #fff;
+   letter-spacing: 10rpx;
+} 
+/*任务*/
+.taskGenter {
+  top: 416rpx;
+  left: 50%;
+  margin-left: -57.5rpx; 
+  width: 115rpx;
+  height: 90rpx;
+}
+
+.top-bg {
+  width: 100%;
+  height: 900rpx;
+  margin-bottom: 30rpx;
+  position: absolute;
+  top: 0rpx;
+  z-index: -1;
+}
+
+.task-user {
+  width: 92%;
+   height: 384rpx; 
+  /* height: 440rpx; */
+  border-radius: 2%;
+  background: #fff;
+  margin: 30rpx auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+   padding-top: 30rpx; 
+  
+}
+
+.task-user view {
+  width: 96%;
+  height: 100%;
+  border-radius: 2%;
+}
+
+.left.top image, .right.bot image {
+  width: 80%;
+  height: 84%;
+  margin: 8% 10%;
+}
+
+.an-crown {
+  width: 30%;
+  height: 11%;
+}
+
+.nickName {
+  height: 11%;
+}
+
+#charm-value {
+  width: 88%;
+  /* height: 40rpx; */
+  height: 50rpx;
+  overflow: hidden;
+  margin: 0 auto;
+  border-top: 2rpx solid #d0cbd2;
+  border-bottom: 2rpx solid #d0cbd2;
+  margin-top: 6rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+#charm-value view {
+  line-height: 40rpx;
+  line-height: 50rpx;
+  font-size: 88%;
+  font-weight: normal;
+  text-align: center;
+  display: block;
+}
+
+.icon.w {
+  width: 85%;
+  height: 10%;
+}
+
+.icon.w .w text {
+  height: 60rpx;
+  width: 100%;
+  /* height: 100%; */
+  line-height: 60rpx;
+  /* background: goldenrod */
+  overflow: hidden;
+}
+/*留言、留言板title*/
+
+.title {
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 120%;
+}
+
+/*
+  *礼物兑换魅力值、魅力值兑换礼物
+  */
+
+.gift-bot {
+  width: 100%;
+  height: 88rpx;
+  position: fixed;
+  bottom: 0rpx;
+  border-top: 2rpx solid #cfcfcf;
+}
+
+.gift-bot .gift-bot-l, .gift-bot .gift-bot-r {
+  width: 50%;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+}
+
+.gift-bot-l {
+  color: #883f9e;
+}
+.gift-bot-r {
+  background: #e4c6d4;
+  display: block;
+  width: 49.5%;
+  float: left;
+  color: #fff;
+  letter-spacing: 20rpx;
+}
+/*订单列表*/
+.orderList {
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+ .orderList-header {
+  display: block;
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 80%;
+  border-bottom: 1rpx solid #e4e4e4;
+  padding-left: 3%;
+}
+.orderList-bot{
+  width: 100%;
+  height: 156rpx;
+  display: flex;
+  flex-direction:row;
+}
+.orderList-l{
+  width: 25%;
+}
+.orderList-l image{
+  margin: 10% 0 0 15%;
+  width:70%;
+  height: 80%;
+   border: 1rpx solid yellow;
+}
+.orderList-c{
+  width: 25%;
+}
+.orderList-c text,.orderList-r text{
+  display: block;
+}
+.orderList-c-t {
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 10% 0 3% 0;
+  display: block;
+  font-size: 90%;
+  overflow: hidden;
+  color: #333;
+}
+.orderList-c-b {
+  height: 36rpx;
+  line-height: 36rpx;
+  display: block;
+  font-size: 80%;
+  overflow: hidden;
+  color: #b0b0b0;
+}
+.orderList-r{
+  width: 50%;
+}
+.orderList-r-t,.orderList-r-b{
+  height: 46%;
+  line-height: 70rpx;
+  overflow: hidden;
+  font-size: 84%;
+  color: #333
+}
+/*礼物列表*/
+.gift-img{
+  width: 144rpx;
+  height:144rpx;
+  border-radius: 50%;
+  margin:0 auto;
+  border: 1rpx solid red;
+}
+.label{
+  position: relative;
+  display: block;
+  width: 28.8%;
+  float: left;
+  border-left: 1rpx solid #e6e6e6;
+  border-bottom: 1rpx solid #e6e6e6;
+  overflow: hidden;
+  padding: 30rpx 30rpx 20rpx 0;
+}
+.label text{
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+  text-align: center;
+}
+.label .label-t{
+  color: #adadad;
+}
+.label .label-b{
+  color: #883f9e;
+}
+.checkbox{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+checkbox .wx-checkbox-input {
+  border:0;
+}
+.gift-bot{
+  background: #fff;
+}
+checkbox-group{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin-bottom: 90rpx */
+}
+/*
+modal样式
+ */
+.modalImg{
+   width: 160rpx;
+   height: 160rpx;
+   /*background: yellow;*/
+   margin: 5rpx auto;
+}
+.modalImg image{
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+.modal-main text{
+   display: block;
+   /*border: 1rpx solid red;*/
+   text-align: center;
+   height: 50rpx;
+   line-height: 50rpx;
+}
+.matchingCue{
+  color: red;
+  padding:10rpx;
+}
+.modalBut{
+   width: 60%;
+   height: 90rpx;
+   background: #893f9e;
+   color:#fff;
+}
+/*交互效果*/
+.modal-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /*top: -30rpx;*/
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+  /*background: green;*/
+  overflow: hidden;
+  z-index: 9999;
+  /*margin: 0;*/
+  /*padding: 38rpx 10%;*/
+}
+.modalViem{
+  position: absolute;
+  top:25%;
+  left:10%;
+  width: 80%;
+  height: 50%;
+  /*background: yellow;*/
+}
+.modalViem .modal-view-w{
+  width: 100%;
+  height: 500rpx;
+  background: #ccc;
+  margin-bottom:30rpx;
+}
+.modalViem .modal-view-w image{
+  width: 100%;
+  height: 100%;
+  background: transparent
+}
+.text.t{
+  height: 70rpx;
+}
+.text{
+   display: flex;
+   /*display: block;*/
+  width:100%;
+   height: 70rpx; 
+   /* height:20%;  */
+  line-height: 70rpx;
+   color:#fff;
+   text-align: center;
+   font-size: 90%;
+   letter-spacing: 3rpx;
+   background-color: #883f9e;
+   background-color: transparent;
+   margin: 6rpx auto;
+   flex-direction: column;
+}
+.view-button{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*height: 70rpx;*/
+ margin-top: 100rpx;
+  background: transparent;
+}
+.view-button text{
+  height: 70rpx;
+   line-height: 70rpx;
+  width: 30%;
+  display: inline-block;
+  margin: 0 auto;
+  background:  #883f9e;
+}

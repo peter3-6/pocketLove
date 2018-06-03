@@ -1,0 +1,7 @@
+<!--pages/about/about.wxml-->
+<view class='about-img'>
+  <image src='../../images/WeChat.png'></image>
+</view>
+<view class='about-text'>
+  <text>版本号1.1.0</text>
+</view>

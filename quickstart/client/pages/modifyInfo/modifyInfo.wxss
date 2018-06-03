@@ -1,0 +1,65 @@
+@import '../template/template.wxss';
+
+.weui-btn {
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  /* margin: 0 auto; */
+}
+
+page, .reg-bg {
+  width: 100%;
+  height: 100%;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.w {
+  /* display: flex; */
+  width: 62%;
+  height:66%;
+  position: absolute;
+  top: 26%;
+  left: 20%;
+  /* background: red; */
+}
+form{
+  width: 100%;
+  height: 100%;
+  /* background: yellow; */
+}
+.picker {
+  /* padding-left: 30rpx; */
+}
+.btn-area button {
+  margin-top: 30rpx;
+  color: #fff;
+  background: #e4c6d4;
+  letter-spacing: 30rpx;
+}
+
+.wux-picker {
+  height: 240px;
+}
+
+.wux-picker .wux-picker-view {
+  width: 100%;
+  height: 200px;
+}
+#countdownObj{
+  margin-top: 50rpx;
+}
+.text{
+  /*background: red;*/
+  display: flex;
+  height: 150rpx;
+}
+.modal-bg image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}

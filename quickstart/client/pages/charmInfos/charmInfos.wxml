@@ -1,0 +1,16 @@
+<view class='charm-info'>
+	<view class='charm-in'>
+			<image class="charm-info-img" src="{{userInfoImg}}" ></image>
+	<view  class='charm-info-header' catch:touchstart='buttonStart' catch:touchmove="buttonMove" catchtouchend="buttonEnd">
+		
+	</view>
+	<view class='charm-info-footer'>
+		<view class='charm-info-foot'>
+			<image class='charm-info-footer-img' src='/images/fabulous.png'></image>
+		<text class='charm-info-footer-text'>0</text>
+		</view>
+		
+	</view>
+	</view>
+
+</view>

@@ -1,0 +1,56 @@
+ @import '../template/template.wxss';
+form{
+  width: 100%;
+  height: 100%;
+  display: block
+}
+.cropper-wrapper {
+  position: relative;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+.cropper-buttons, .cropper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cropper-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+.cropper-buttons .getCropperImage, .cropper-buttons .upload {
+  width: 50%;
+  text-align: center;
+  background: transparent;
+  color: #06a00e;
+}
+
+.cropper {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.cropper-buttons {
+  position: relative;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #04b00f;
+}
+.button-hover{
+    width: 50%;
+  text-align: center;
+  background: transparent;
+  color: #06a00e;
+}
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+color:#06a00e;
+background-color:transparent;
+}

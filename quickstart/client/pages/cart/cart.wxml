@@ -1,0 +1,120 @@
+<view class="main">
+  <view wx:if="{{hasList}}">
+    <scroll-view scroll-y="true" class="weui-panel weui-panel_access" style="height:{{deviceHeight}}px;" bindscrolltolower="loadMore" scroll-top="{{scroll_top}}" scroll-with-animation="{{true}}">
+        <view class="cart-box">
+          <view class="cart-list" wx:for="{{carts}}" wx:key="{{index}}">
+            <icon wx:if="{{item.selected}}" type="success" color="#e4c6d4" data-index="{{index}}" class="cart-pro-select" bindtap="selectList" />
+            <icon wx:else type="circle" class="cart-pro-select" data-index="{{index}}" bindtap="selectList" />
+            <image class="cart-thumb" src="{{images}}{{carts[index].fdId}}"></image>
+            <text class="cart-pro-name">{{item.giftName}}</text>
+            <text class="cart-pro-price">{{item.conversionRate}}</text>
+            <view class="cart-count-box">
+              <text class="cart-count-down" bindtap="minusCount" data-obj="{{obj}}" data-index="{{index}}">-</text>
+              <text class="cart-count-num">{{item.fdCount}}</text>
+              <text class="cart-count-add" bindtap="addCount" data-index="{{index}}">+</text>
+            </view>
+          </view>
+        </view>
+      <!-- <view class="loading">
+        <loading hidden="{{switch}}">
+          正在加载中...
+        </loading> -->
+         <!-- <view class="remind">{{remind}}</view>  -->
+      <!-- </view> -->
+    </scroll-view>
+
+    <!-- <view class="cart-footer">
+            <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#fff" class="total-select" bindtap="selectAll"/>
+            <icon wx:else type="circle" color="#fff" class="total-select" bindtap="selectAll"/>
+            <view class="order-icon">
+            </view>
+            <text>全选</text>
+            <text class="cart-toatl-price">{{totalPrice}}</text>
+        </view> -->
+  </view>
+  <view wx:else>
+    <view class="cart-no-data">你还没礼物呢~</view>
+  </view>
+</view>
+<!--  + 号 -->
+<import src='../template/template.wxml'></import>
+<template is='shopping' data="{{animCollect,toIndexPage,animationcollectA,messageImg,animationcollectB,messageTap,animInput,myGiftListImg,giveList,myGiftListTap,animTranspond,animationcollectC,plus,animPlus,plusTap}}"></template>
+
+ <import src='../template/template.wxml'></import>
+<template is="exchangeGift" data="{{charismata,exchangeGiftButton,exchangeGiftToc}}"></template> 
+<!-- 系统小贴士 -->
+<!-- <import src='../template/template.wxml'></import>
+<template is='alumnus' data="{{modal,background,regCueT,regCueB,modalTap}}"></template> -->
+<!-- 半透明背景上面的数据提示信息(交互效果) -->
+<view class="modal-bg" hidden="{{modal}}" bind:tap="{{modalTap}}">
+  <image src="https://koudaizhilian-1254460722.cosbj.myqcloud.com/images/welcome.png"></image>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="main">
+    <view wx:if="{{hasList}}">
+        <view class="cart-box">
+            <view class="cart-list" wx:for="{{carts}}" wx:key="{{index}}">
+                <icon wx:if="{{item.selected}}" type="success" color="#893f9e" data-index="{{index}}"  class="cart-pro-select" bindtap="selectList"/>
+                <icon wx:else type="circle" class="cart-pro-select" data-index="{{index}}" bindtap="selectList"/>
+                <navigator url="../details/details?id={{item.id}}">
+                <image class="cart-thumb" src="{{images}}{{carts[index].fdId}}"></image>
+                </navigator>
+                <text class="cart-pro-name">{{item.title}}</text>
+                <text class="cart-pro-price">{{item.price}}</text>
+                <view class="cart-count-box">
+                    <text class="cart-count-down" bindtap="minusCount" data-obj="{{obj}}" data-index="{{index}}">-</text>
+                    <text class="cart-count-num">{{item.num}}</text>
+                    <text class="cart-count-add" bindtap="addCount" data-index="{{index}}">+</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="cart-footer">
+            <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#fff" class="total-select" bindtap="selectAll"/>
+            <icon wx:else type="circle" color="#fff" class="total-select" bindtap="selectAll"/>
+            <view class="order-icon">
+                <navigator url="../orders/orders"><image src="/image/icon3.png"></image></navigator>
+            </view>
+            <text>全选</text>
+            <text class="cart-toatl-price">￥{{totalPrice}}</text>
+        </view>
+    </view>
+    <view wx:else>
+        <view class="cart-no-data">你还没礼物呢~</view>
+    </view>
+</view>
+<import src='../template/template.wxml'></import>
+<template is="exchangeGift"  data="{{charismata,exchangeGiftButton,exchangeGiftToc}}"></template> -->

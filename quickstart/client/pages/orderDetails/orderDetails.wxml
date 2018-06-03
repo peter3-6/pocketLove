@@ -1,0 +1,29 @@
+<view class='orderDetails'>订单信息</view>
+<view class='orderDetails-b-w'>
+	<view>订单日期：</view>
+	<view>2017-11-08 02:53</view>
+</view>
+<view class='orderDetails-b-w'>
+	<view>订单号：</view>
+	<view>554545151</view>
+</view>
+<view class='orderDetails-b-w'>
+	<view>商品名称：</view>
+	<view>玫瑰花</view>
+</view>
+<view class='orderDetails-b-w'>
+	<view>单价：</view>
+	<view>20</view>
+</view>
+<view class='orderDetails-b-w'>
+	<view>购买数量：</view>
+	<view>2</view>
+</view>
+<view class='orderDetails-b-w'>
+	<view>实际支付：</view>
+	<view>40</view>
+</view>
+<view class='orderDetails-b-w'>
+	<view>购买账户：</view>
+	<view>非你莫属</view>
+</view>

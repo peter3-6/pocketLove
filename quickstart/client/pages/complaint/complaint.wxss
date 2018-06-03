@@ -1,0 +1,46 @@
+page{
+	background: #ebebeb;
+}
+.section{
+	/*background: yellow;*/
+	/*margin-bottom: 20rpx;*/
+	margin: 45rpx 50rpx 0 50rpx;
+}
+.section.top input{
+	height: 80rpx;
+	font-size: 34rpx;
+}
+input,textarea{
+	border:2rpx solid #bfbfbf;
+	background: #fff;
+	width: 100%;
+
+	/*margin-left: 20rpx;*/
+}
+.section.bot textarea{
+	height: 300rpx;
+	/*line-height: 30px;*/
+	/*width: 100%;*/
+	/*display: inline;*/
+	/*background: red;*/
+}
+.section .input-placeholder{
+	/*background: #ccc;*/
+	color: #9c9c9c;
+}
+.btn-area{
+	margin-top: 60rpx;
+}
+.btn-area button{
+	/*margin-bottom: 30rpx;*/
+	margin: 0 50rpx 40rpx 50rpx;
+	color: #fff;
+	letter-spacing: 50rpx;
+   padding-right: 0;
+}
+.btn-area .submit{
+	background: #e4c6d4;
+}
+.btn-area .reset{
+	background: #b5b5b5;
+}

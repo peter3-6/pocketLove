@@ -1,0 +1,108 @@
+/* pages/my/user/user.wxss */
+page{
+	background: #f0f0f0;
+}
+.w{
+	background: #fff;
+	/* margin-top: 25rpx; */
+	/* border-top: 1rpx solid #b5b5b5; */
+	/* border-bottom: 1rpx solid #b5b5b5; */
+}
+.section.user{
+	height: 120rpx;
+}
+.section.user view{
+	width: 50%;
+	font-size: 90%;
+	line-height: 120rpx;
+}
+.section.user image{
+	width: 100rpx;
+	width: 160rpx;
+	/*width: 60%;*/
+	height:100rpx;
+	float: right;
+	margin-top: 10rpx;
+}
+.section{ 
+	height: 70rpx;
+	border-bottom: 1rpx solid #b5b5b5;
+	/* margin: auto 30rpx auto 30rpx; */
+	margin: auto 8% auto 8%; 
+	display: flex;
+	flex-direction: row;
+	line-height: 70rpx;
+}
+.section view{
+	line-height: 70rpx;
+	letter-spacing:6rpx;
+}
+.section .fl{
+	width: 34%;
+	width: 40%;
+	font-size: 90%;
+}
+.section .fr{
+	width: 65%;
+  border-bottom:1rpx solid transparent;
+}
+.section .fr input{
+	height: 70rpx;
+	width:100%;
+	font-size: 90%;
+	float: right;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	text-align: right;
+}
+.section .fr text{
+	height: 70rpx;
+	width:100%;
+	font-size: 90%;
+	float: right;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	text-align: right;
+}
+.section,input{
+	color:#000;
+	letter-spacing:4rpx;
+
+}
+.input-placeholder{
+	color:#000;
+}
+
+/* navigator {
+  background: linear-gradient(to right,rgba(211,160,185,.8), rgba(222,182,201,.4));
+  
+} */
+.my-row{
+	width: 80%;
+	height: 120rpx;
+	 background: #fff; 
+  /* background: rgba(211,160,185,.8); */
+	margin:20rpx auto;
+	display: flex;
+	flex-flow: row nowrap;
+  /* border-radius: 10%; */
+  /* padding-left: 80rpx; */
+}
+.my-row text{
+	background: #fff;
+	line-height: 120rpx;
+	height: 120rpx;
+	color:#fff;
+  background: rgba(211,160,185,.8);
+  
+  /* background: linear-gradient(to right,rgba(211,160,185,.8), rgba(222,182,201,.4)); */
+  padding: 0;
+  text-align: center;
+   border-radius: 10rpx; 
+}
+.my-order{
+	flex-grow: 10;
+  padding-left: 70rpx;
+}

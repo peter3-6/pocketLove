@@ -1,0 +1,8 @@
+<view class='title'>留言板</view>	
+<view class='section' wx:for="{{datas}}">
+<!-- <view class='section' > -->
+	<!-- <block > -->
+		<text style="text-align: left;height:250rpx">内容： {{datas[index].leavelWord}}</text>
+		<text>昵称：{{datas[index].fdInitiateUser.nickName}}</text>	
+	<!-- </block>	 -->
+</view>

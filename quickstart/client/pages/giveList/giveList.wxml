@@ -1,0 +1,49 @@
+<view class="main">
+    <!-- <view wx:if="{{hasList}}"> -->
+    <view wx:if="{{hasList}}">
+    <!-- <view> -->
+        <view class="cart-box">
+            <view class="cart-list" wx:for="{{carts}}" wx:key="{{index}}">
+                <icon wx:if="{{item.selected}}" type="success" color="#e4c6d4" data-index="{{index}}"  class="cart-pro-select" bindtap="selectList"/>
+                <icon wx:else type="circle" class="cart-pro-select" data-index="{{index}}" bindtap="selectList"/>
+                <image class="cart-thumb" src="{{images}}{{carts[index].giftId}}"></image>
+                <!-- <image class="cart-thumb" src="{{images}}{{carts[index].fdId}}"></image> -->
+                <text class="cart-pro-name">{{item.fdGift.giftName}}</text>
+                <text class="cart-pro-price">{{item.fdGift.conversionRate}} 魅力值</text>
+                <text class="cart-pro-price">总个数:{{item.amount}}</text>
+                <view class="cart-count-box">
+                    <text class="cart-count-down" bindtap="minusCount" data-obj="{{obj}}" data-index="{{index}}">-</text>
+                    <!-- <text class="cart-count-num">{{item.currentAmount}}</text> -->
+                    <input type="number" bindblur="bindinputTap" data-index="{{index}}" class="cart-count-num" value="{{item.currentAmount}}"></input>
+                    <!-- <text class="cart-count-num">{{num}}</text> -->
+                    <text class="cart-count-add" bindtap="addCount" data-index="{{index}}">+</text>
+                </view>
+            </view>
+        </view>
+<!-- <view class='blank'></view> -->
+        <!-- <view class="cart-footer">
+            <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#fff" class="total-select" bindtap="selectAll"/>
+            <icon wx:else type="circle" color="#fff" class="total-select" bindtap="selectAll"/>
+            <view class="order-icon">
+            </view>
+            <text>全选</text>
+            <text class="cart-toatl-price">{{totalPrice}}个礼物</text>
+        </view> -->
+    </view>
+    <view wx:else>
+        <view class="cart-no-data">你还没礼物呢~</view>
+    </view>
+</view>
+<import src='../template/template.wxml'></import>
+<template is="exchangeCharm"  data="{{charismata,exchangeGiftButton,exchangeGiftToc,giveBackground,giveDisplay}}"></template>
+<!-- <import src='../template/template.wxml'></import>
+<template is="exchangeGift"  data="{{charismata,exchangeGiftButton,exchangeGiftToc}}"></template> -->
+<!-- 系统小贴士 -->
+<!-- <import src='../template/template.wxml'></import>
+<template is='alumnus' data="{{modal,background,regCueT,regCueB,modalTap}}"></template> -->
+  <!-- <view class="modal-bg" hidden="{{modal}}" bind:tap="{{modalTap}}">
+    <image src="{{Img}}" ></image>
+  </view> -->
+<!--  + 号 -->
+ <import src='../template/template.wxml'></import> 
+<template is='shopping' data="{{animCollect,toIndexPage,animationcollectA,messageImg,animationcollectB,messageTap,animInput,myGiftListImg,giveList,myGiftListTap,animTranspond,animationcollectC,plus,animPlus,plusTap}}"></template>

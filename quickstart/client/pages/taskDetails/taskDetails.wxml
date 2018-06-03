@@ -1,0 +1,75 @@
+<!-- 图片任务 -->
+<view class='section center'  wx:if="{{missionType=='图片'}}">
+  <view bind:tap='previewImageLeft'  style='border:none'>
+    <image  style='border:none' class="taskDetails-left" wx:if="{{dataLeft}}"  class='gift-img' src="{{missionedImage}}?fdId={{datas[0].fdId}}"></image>
+    <image  style='border:none' class="taskDetails-left" wx:else  class='gift-img' src="{{missionedImage}}?fdId={{datas[1].fdId}}"></image>
+  </view>
+  <view bind:tap='previewImageRight' style='border:none'>
+    <image  style='border:none' class="taskDetails-rigth" wx:if="{{dataRight}}" class='gift-img' src="{{missionedImage}}?fdId={{datas[0].fdId}}"></image>
+    <image  style='border:none' class="taskDetails-rigth" wx:else class='gift-img' src="{{missionedImage}}?fdId={{datas[1].fdId}}"></image>
+  </view>
+</view>
+<view class='text-task' wx:elif="{{missionType=='文本'}}">
+  <view class='text-task-top'>
+    <!-- 文本任务内容 -->
+    <text class='text-task-top-text'>{{datas[0].missionedContent}}</text>
+  </view>
+  <view class='text-task-top' style='border:none'>
+   <text class='text-task-top-text'>{{datas[1].missionedContent}}</text>
+  </view>
+</view>
+<view class='footer' id='foorer'>
+  <view class='footer-top'>
+    <text class="">任务详情</text>
+  </view>
+  <view>
+    <text class="fl">任务内容：</text>
+    <text class="fr">{{datas[0].fdMission.missionName}}</text>
+  </view>
+  <view style='border:none'>
+    <text class="fl">完成状况：</text>
+    <text style='text-align:right'>已经完成</text>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view class='section center'  wx:if="{{missionType=='图片'}}">
+  <view bind:tap='previewImageLeft'>
+    <image class="taskDetails-left" wx:if="datas[0]!=null" class='gift-img' src="{{missionedImage}}?fdId={{datas[0].fdId}}"></image>
+  </view>
+  <view bind:tap='previewImageRight' style='border:none'>
+    <image class="taskDetails-rigth" wx:if="datas[1]!=null" class='gift-img' src="{{missionedImage}}?fdId={{datas[1].fdId}}"></image>
+  </view>
+</view>
+<view class='text-task' wx:elif="{{missionType=='文本'}}">
+  <view class='text-task-top'>
+    <text class='text-task-top-text'>{{datas[0].missionedContent}}</text>
+  </view>
+  <view class='text-task-top' style='border:none'>
+   <text class='text-task-top-text'>{{datas[1].missionedContent}}</text>
+  </view>
+</view>
+<view class='section footer' id='foorer'>
+  <view class='footer-top'>
+    <text class="">任务详情</text>
+  </view>
+  <view>
+    <text class="fl">任务内容：</text>
+    <text class="fr">{{datas[0].fdMission.missionName}}</text>
+  </view>
+  <view style='border:none'>
+    <text class="fl">完成状况：</text>
+    <text class="fr">已经完成</text>
+  </view>
+</view> -->

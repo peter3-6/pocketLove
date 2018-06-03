@@ -1,0 +1,365 @@
+<!-- 报名、匹配start 个人信息卡片 --> 
+<template name="personalInfo">
+  <image class='headImg' src="{{headImg}}"></image>
+  <image class='an-crown' src="{{symbolize}}"></image>
+  <text class='nickName'>{{nickName}}</text>
+  <view id='charm-value'>
+    <view class="charm" style=' border-right: 2rpx solid #c9c4ca'>
+      魅力值：
+    </view>
+    <view class="charm-value">
+      {{charismata}}
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{constellationImg}}'></image>
+      <text>:{{constellation}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image class="sex" src='{{sex}}'></image>
+      <text>:{{fdGender}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{label}}'></image>
+      <text>:{{userLabel}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{autograph}}'></image>
+      <text>:{{signature}}</text>
+    </view>
+  </view>
+ <!--    <text class="pp-daojishi date" style="display: {{djstDisplay}}">
+      <text class="date">{{DateLeft}} {{Date}} {{DateRight}}</text>    
+    </text> -->
+    <!-- 时间倒计时勿删 -->
+  <text class="pp-daojishi" style="display: {{djstDisplay}}">距<text id="djsText">{{djsText}}</text>时间还有：<text class="start" style="display: {{startDisplay}}"> {{ start }} </text><text style="display: {{display}}">{{day}}</text>{{d}}<text style="display: {{display}}">{{hour}}</text>{{h}}<text style="display: {{display}}">{{minute}}</text>{{min}}<text style="display: {{display}}">{{second}}</text>{{sec}}</text>
+</template>
+<!-- 进行匹配页面模板 -->
+<template name="Match">
+  <image class='headImg' src="{{headImg}}"></image>
+  <image class='an-crown' src="{{symbolize}}"></image>
+  <text class='nickName'>{{nickName}}</text>
+  <view id='charm-value'>
+    <view class="charm" style=' border-right: 2rpx solid #c9c4ca'>
+      魅力值：
+    </view>
+    <view class="charm-value">
+      {{charismata}}
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{constellationImg}}'></image>
+      <text>:{{constellation}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image class="sex" src='{{sex}}'></image>
+      <text>:{{fdGender}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{label}}'></image>
+      <text>:{{userLabel}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{autograph}}'></image>
+      <text>:{{signature}}</text>
+    </view>
+  </view>
+</template>
+<!-- 任务、成功匹配结果  个人信息拉片   -->
+<template name="taskInfo">
+  <text class='nickName'>{{nickName}}</text>
+  <!-- <text class='nickName'>杨小幂</text> -->
+  <image class='an-crown' src="{{symbolize}}"></image>
+  <view id='charm-value'>
+    <view class="charm" style=' border-right: 2rpx solid #c9c4ca'>
+      魅力值
+    </view>
+    <view class="charm-value">
+      {{charismata}}
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{constellationImg}}'></image>
+      <text>{{colon}}{{constellation}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image class="sex" src='{{sex}}'></image>
+      <text>{{colon}}{{fdGender}}{{gender}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{label}}'></image>
+      <text>{{colon}}{{userLabel}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{autograph}}'></image>
+      <text>{{colon}}{{signature}}</text>
+    </view>
+  </view>
+</template>
+<template name="taskInfoo">
+  <text class='nickName'>{{nickName}}</text>
+  <!-- <text class='nickName'>王小虎</text> -->
+  <image class='an-crown' src="{{symbolize}}"></image>
+  <view id='charm-value'>
+    <view class="charm" style=' border-right: 2rpx solid #c9c4ca'>
+      魅力值
+    </view>
+    <view class="charm-value">
+      {{charismata}}
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{constellationImg}}'></image>
+      <text>{{colon}}{{constellation}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image class="sex" src='{{sex}}'></image>
+      <text>{{colon}}{{fdGender}}{{gender}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{label}}'></image>
+      <text>{{colon}}{{userLabel}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{autograph}}'></image>
+      <text>{{colon}}{{signature}}</text>
+      <!-- <text>{{colon}}遇见缘分中的Ta</text> -->
+    </view>
+  </view>
+</template>
+<!-- 查看匹配 -->
+<!-- 报名、匹配start 个人信息卡片 --> 
+<template name="macthing">
+  <image class='headImg' src="{{headImg}}"></image>
+  <image class='an-crown' src="{{symbolize}}"></image>
+  <text class='nickName'>{{nickName}}</text>
+  <view id='charm-value'>
+    <view class="charm" style=' border-right: 2rpx solid #c9c4ca'>
+      魅力值：
+    </view>
+    <view class="charm-value">
+      {{charismata}}
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{constellationImg}}'></image>
+      <text>:{{constellation}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image class="sex" src='{{sex}}'></image>
+      <text>:{{fdGender}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{label}}'></image>
+      <text>:{{userLabel}}</text>
+    </view>
+  </view>
+  <view class='icon w'>
+    <view class='w'>
+      <image src='{{autograph}}'></image>
+      <text>:{{signature}}</text>
+    </view>
+  </view>
+<!--      <text class="pp-daojishi date" style="display: {{djstDisplay}}">
+      <text class="date">{{DateLeft}} {{Date}} {{DateRight}}</text>    
+    </text> -->
+    
+  <text class="pp-daojishi" style="display: {{djstDisplay}}">距<text id="djsText">{{djsText}}</text>时间还剩：<text class="start" style="display: {{startDisplay}}"> {{ start }} </text><text style="display: {{display}}">{{day}}</text>{{d}}<text style="display: {{display}}">{{hour}}</text>{{h}}<text style="display: {{display}}">{{minute}}</text>{{min}}<text style="display: {{display}}">{{second}}</text>{{sec}}</text>
+</template>
+<!-- 排行榜header模板 -->
+<template name="charmHeader">
+  <view id='header'>
+    <text>排名</text>
+    <text class="world-nickName">昵称</text>
+    <text>魅力值</text>
+  </view>
+</template>
+<!--魅力值兌換禮物  -->
+<template name="exchangeGift">
+  <view class='gift-bot'>
+  <form>
+    <view class='gift-bot-l'>魅力值：{{charismata}}</view>
+    <view class='gift-bot-r' bind:tap="{{exchangeGiftToc}}">{{exchangeGiftButton}}</view>
+    </form>
+  </view>
+</template>
+<!--礼物兑换魅力值  -->
+<template name="exchangeCharm">
+  <view class='gift-bot'>
+    <view class='gift-bot-l' bind:tap="exchange" style="background:#e8853f;color:#fff;width:50%;">兑换魅力值</view>
+    <view class='gift-bot-r' bind:tap="give" style="background:{{giveBackground}};display: {{giveDisplay}};color:#fff;width:50%;">赠送给Ta</view>
+  </view>
+</template>
+<!-- 订单列表 -->
+<template name='orderList'>
+  <!-- <block  wx:for="{{objectArry}}"> -->
+  <view id='orderList' class='orderList' bind:tap='orderDetails'>
+    <text class='orderList-header'>订单日期：2017年11月07日 19:30</text>
+    <view class='orderList-bot'>
+      <view class='orderList-l'>
+        <image src='../../images/sex.png'></image>
+      </view>
+      <view class='orderList-c'>
+        <text class='orderList-c-t'>商品名</text>
+        <text class='orderList-c-b'>数量：5</text>
+      </view>
+      <view class='orderList-r'>
+        <text class='orderList-r-t'>订单号：4124541245</text>
+        <text class='orderList-r-b'>实际支付：10魅力值</text>
+      </view>
+    </view>
+  </view>
+  <!-- </block> -->
+</template>
+<!-- 留言列表 -->
+<!-- <template name='liuYan'>
+  <block wx:for="{{datas}}">
+    <radio value="我们约会吧我们约会吧" color="#883f9e">{{datas.index}}我们约会吧...</radio>
+  </block>
+</template>
+ --><!-- 模态框、遮罩层 成功-->
+<template name="modalSuccess">
+  <view class="mask mask-bg" hidden="{{hidden}}" bind:tap="modalSuccess">
+    <view class="modal">
+      <view class='modal-main'>
+        <view class='modalImg'>
+          <image src="{{modalImg}}" binderror="" bindload=""></image>
+        </view>
+        <text>恭喜您！参与{{text}}成功</text>
+        <text>离.....又进一步</text>
+        <button class='modalBut' disabled="{{}}" bind:tap="{{modalBut}}" hover-class="custom-button-hover-class">确认</button>
+      </view>
+    </view>
+  </view>
+</template>
+<!-- 匹配条件界面模态框 -->
+<template name="matching">
+  <modal class="modal" hidden="{{hidden}}" confirmText="{{confirmText}}" no-cancel bindconfirm="matching">
+    <view class='modal-main'>
+      <view class="section">
+        <picker mode="region" bind:change="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker" id='1'>
+            市:{{region[1]}}
+          </view>
+        </picker>
+      </view>
+      <text class="matchingCue"> {{matchingCue}}</text>
+      <button class='modalBut' bind:tap="match" disabled="{{}}" hover-class="custom-button-hover-class">确认</button>
+    </view>
+  </modal>
+</template>
+<!-- 匹配结果 modal -->
+<template name="matchingResult">
+  <modal class="modal" hidden="{{matchingResult}}" confirmText="{{confirmText}}" no-cancel bindconfirm="matchingResult">
+    <view class='modal-main'>
+      <view class='matchingResult'>
+        <image src="{{matchingResultImg}}"></image>
+      </view>
+      <button class='modalBut' disabled="{{}}" bind:tap="match" hover-class="custom-button-hover-class">确认</button>
+    </view>
+  </modal>
+</template>
+<!-- 开始任务 交互模态框 -->
+<templatae name='maskModal'>
+  <view class="mask mask-bg" hidden="{{mask}}">
+    <view class='X'>X</view>
+    <view class="t_image" bindtap="b">
+      <image class="t_image1" src="{{Img}}"></image>
+    </view>
+    <view class='c' bindtap="{{maskBut}}">{{maskButText}}</view>
+  </view>
+</templatae>
+<!-- 礼物列表 -->
+<!-- <template name='giftList'>
+  <label class="label">
+    <checkbox class="checkbox" value="checkbox1" />
+    <image class='gift-img' src='../../images/sex.png'></image>
+    <text class="label-t">{{index}}</text>
+    <text class="label-b">20魅力值</text>
+  </label>
+</template> -->
+<!-- canvas -->
+<template name="canvas">
+  <canvas class="cropper" disable-scroll="true" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" style="width:{{width}}px;height:{{height}}px;background-color: rgba(0, 0, 0, 0.8)" canvas-id="{{id}}">
+  </canvas>
+</template>
+<!-- 交互提示效果 -->
+<!-- <template name="modalCue">
+  <view class="modal-bg" hidden="{{modal}}" bind:tap="{{modalTap}}">
+    <view class="modalViem">
+      <text class="{{modalText}} a text" bind:tap="{{a}}">{{regCueT}}</text>
+      <text class="{{modalText}} text" bind:tap="{{b}}">{{regCueB}}</text>
+    </view>
+  </view>
+</template> -->
+<!-- 同校匹配条件是否要扩大的层 -->
+<!-- <template name="alumnus">
+  <view class="modal-bg" hidden="{{modal}}" bind:tap="{{modalTap}}">
+    <view class="modalViem">
+      <text class="{{modalText}} t text" >{{regCueT}}</text>
+      <text class="{{modalText}} text" >{{regCueB}}</text>
+      <view class="view-button">
+      <text style="background:{{background}}" bind:tap="{{noTap}}"> {{ no}} </text>     
+      <text style="background:{{background}}" bind:tap="{{yesTap}}"> {{ yes}} </text>     
+      </view>
+    </view>
+  </view>
+</template> -->
+<!--系统提示消息  -->
+<template name="messageRemind">
+  <!-- 背景半透明 -->
+  <view class="modal-bg" hidden="{{remindModal}}" bind:tap="{{remindModalTap}}">
+    <view class="modalViem view">
+      <text class="{{modalText}} text" >{{remindTitle}}系统小贴士</text>
+      <text class="{{modalText}} {{txet}} text" >{{remindContent}}系统赠送给了你礼物，快去送给对方吧</text>
+    </view>
+  </view>
+</template>
+<!--  + 号 -->
+<template name="shopping">
+<view class="shopping">
+  <image src="/images/indexHome.png" class="img-style" animation="{{animCollect}}" bind:tap='{{toIndexPage}}'></image>
+  <image src="/images/userCenter.png" class="img-style" animation="{{animationcollectA}}" bindtap="toMyPage"></image>
+  <image src="{{messageImg}}" class="img-style" animation="{{animationcollectB}}" bind:tap='{{messageTap}}'></image>
+  <navigator url='../cart/cart' open-type='redirect'>
+    <image src="/images/shopping.png" class="img-style" animation="{{animInput}}"></image>
+  </navigator>
+  <image src="{{myGiftListImg}}" class="img-style" animation="{{giveList}}" bind:tap='{{myGiftListTap}}'></image>
+  <image src="/images/Ranking.png" class="img-style" animation="{{animTranspond}}" bindtap="toCharmPage"></image>
+  <image src="/images/Task.png" class="img-style" animation="{{animationcollectC}}" bindtap="toTaskPage"></image>
+  <image src="{{plus}}" class="img-plus-style" animation="{{animPlus}}" bindtap="{{plusTap}}"></image>
+</view>
+</template>

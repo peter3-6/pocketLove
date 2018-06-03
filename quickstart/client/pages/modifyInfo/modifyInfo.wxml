@@ -1,0 +1,93 @@
+<!-- 背景图 -->
+<view class='reg-bg'>
+  <image src="https://koudaizhilian-1254460722.cosbj.myqcloud.com/images/reg.jpg"></image>
+</view>
+<template is="picker-city" data="{{ ...$wux.pickerCity.city }}" />
+<template name="picker-city">
+  <view class="wux-picker-container" wx:if="{{ visible }}">
+    <view class="weui-mask {{ animateCss[1] }}" hidden="{{ !visible }}" bindtap="{{ onCancel }}"></view>
+    <view class="wux-picker {{ animateCss[0] }}">
+      <view class="picker-header">
+        <view class="picker-header-inner">
+          <!-- 取消 -->
+          <view class="picker-button close-picker cancel {{ cancel.className }}" bindtap="{{ onCancel }}">{{ cancel.text }}</view>
+          <!-- 标题 -->
+          <view class="title">{{ title }}</view>
+          <!-- 确定 -->
+          <view class="picker-button close-picker confirm {{ confirm.className }}" bindtap="{{ onConfirm }}">{{ confirm.text }}</view>
+        </view>
+      </view>
+      <picker-view class="wux-picker-view" indicator-style="height: 32px;" value="{{ value }}" bindchange="{{ bindChange }}">
+        <block wx:for="{{ items }}" wx:key="">
+          <!-- 具体信息 -->
+          <picker-view-column>
+            <view class="wux-picker-view-column" wx:for="{{ item }}" wx:key="" wx:for-item="value">
+              {{ value }}
+            </view>
+          </picker-view-column>
+        </block>
+      </picker-view>
+    </view>
+  </view>
+</template>
+<view class="w">  
+  <form bindsubmit="formSubmit"> 
+    <!-- 一句话介绍自己 -->
+    <view class="section" style='border-bottom: 1rpx solid  #d9d9d9'>
+        <!-- <view class="picker">* 自我介绍</view> -->
+      <input type="text" class='username' maxlength="8" name="signature" placeholder="请用八个字描述自己" value="" />
+    </view>
+  <!-- 生日 -->
+  <view class="section">
+    <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      <view class="picker">
+        * 生日: {{date}}
+      </view>
+    </picker>
+  </view>
+  <!-- 地区选择 -->
+  <view class="section">
+    <picker mode="region" bind:change="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        <!-- <image class='icon' src="{{icon}}"></image> -->
+        * 省份:{{region[0]}}
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <picker mode="region" bind:change="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker" >
+        <!-- <image class='icon' src="{{icon}}"></image> -->
+        * 市/区:{{region[1]}}
+      </view>
+    </picker>
+  </view>
+  <!-- 标签选择 -->
+  <view class="section">
+    <picker mode='selector' bind:change="userLabel" value="{{userLabel_index}}" range="{{userLabel}}">
+      <view class="picker">
+        * 个人标签：{{userLabel[userLabel_index]}}
+      </view>
+    </picker>
+  </view>
+  <!-- 星座 current_constellation -->
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        <!-- * 星座：{{array[index]}} -->
+        * 星座：{{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="section" wx:if="{{!_school}}" >
+    <view bindtap="onTapCity" >
+      <view class="picker" id='1'>
+        * 学校：{{city2 }}
+      </view>
+    </view>
+  </view>
+  <view class="btn-area">
+      <button formType="submit">提交</button>
+    </view>
+  </form>
+</view>

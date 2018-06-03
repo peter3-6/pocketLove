@@ -1,0 +1,117 @@
+/* @import '../template/template.wxss'; */
+
+.wux-picker {
+  height: 240px;
+}
+
+.wux-picker .wux-picker-view {
+  height: 210px;
+}
+
+page {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  background: url('https://koudaizhilian-1254460722.cosbj.myqcloud.com/images/reg.jpg') 100% 100% no-repeat;
+  background-size: 100% 100%;
+}
+
+/*-----------------tap切换 start------------------  */
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #e4c6d4;
+  text-align: center;
+  line-height: 80rpx;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background: #fff;
+}
+
+.swiper-tab-list {
+  font-size: 40rpx;
+  display: inline-block;
+  width: 50%;
+  color: #000;
+}
+
+.on {
+  color: #e4c6d4;
+  border-bottom: 5rpx solid #e4c6d4;
+}
+
+.swiper-box {
+  display: block;
+  height: 1100rpx;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 80rpx;
+}
+
+.swiper-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*-----------------tap切换 end ------------------- */
+
+/*-----------------form表单 start ------------------- */
+
+form.form {
+  display: flex;
+  width: 68%;
+  position: absolute;
+  top: 18%;
+  left: 22%;
+}
+
+view.section {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1rpx solid  #d9d9d9;
+}
+
+.inputValue {
+  width: 100%;
+  display: inline-block;
+  padding: 12rpx 0rpx 12rpx 26rpx;
+}
+
+.section .picker {
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20rpx 0rpx 20rpx 0;
+  font-size: 90%;
+}
+
+.btn-area button {
+  margin-top: 16rpx;
+  color: #fff;
+  background: #e4c6d4;
+  letter-spacing: 30rpx;
+}
+
+/*-----------------form表单 end ------------------- */
+/*交互效果*/
+.modal-bg{
+  width: 100%;
+  height: 117%;
+  position: absolute;
+   top: 0; 
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+  overflow: hidden;
+  z-index: 9999;
+}
+.modal-bg image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}

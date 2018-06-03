@@ -1,0 +1,10 @@
+<view class='title'>消息中心</view>	
+<view class='section' wx:for="{{datas}}" bind:tap="datasList">
+	<text style="text-align: left;">内容：{{datas[index].remindContent}}</text>
+	<text>类别：{{datas[index].fdTitel}}</text>	
+</view>
+<!-- 送、收礼物显示效果 -->
+<view class="mask mask-bg" hidden="{{messageModal}}" bind:tap="{{messageTap}}" wx:for="{{datas}}">
+  <text class=" ">内容：{{datas[0].remindContent}}</text>
+  <text class=" ">{{datas[0].fdTitel}}</text>
+</view>

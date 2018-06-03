@@ -1,0 +1,201 @@
+@import '../template/template.wxss';
+/* page{
+  position: relative;
+} */
+#startTaskBg{
+  display: block;
+  height: 900rpx;
+  background:  url("https://koudaizhilian-1254460722.cosbj.myqcloud.com/images/startTask.jpg") 100% 100% no-repeat;
+  background-size: 100% 100%;
+  margin-top: 0
+}
+#btn{
+  margin-top: 40rpx;
+}
+/* .image{
+  border: 1rpx solid red;
+} */
+page {
+  position: relative;
+  top: 0;
+     top: -30rpx;   
+  
+  height: 100%;
+}
+.top-bg {
+    /* top: -30rpx;   */
+}
+.task {
+  margin-top: 120rpx;
+  margin-top: 80rpx;
+  margin-bottom: 16rpx;
+}
+/* .mask.mask-bg {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: -30rpx;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  z-index: 9999;
+  margin: 0;
+  padding: 38rpx 10%;
+} */
+.mask.mask-bg {
+  width:100%;
+  height: 100%;
+  position: fixed;
+   top: -30rpx; 
+   top: 0rpx; 
+  left: 0%;
+     /* background: rgba(0, 0, 0, 0.7);    */
+   /* background:red;  */
+  overflow: hidden;
+  z-index: 9999;
+  margin: 0;
+   padding: 0rpx 0%; 
+}
+.t_image {
+  width: 100%;
+  height: 780rpx;
+  position: relative;
+  margin: 0 auto ;
+  top: 10%;
+}
+
+.t_image1 {
+  display: block;
+  width: 86%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.c {
+  width: 60%;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 90%;
+  letter-spacing: 10rpx;
+  background-color: #883f9e;
+  margin: 0 auto;
+  padding: 10rpx;
+}
+
+.maskCon{
+   position: fixed;
+   top:12%;
+   left:29%;
+  width: 46%;
+   height: 182rpx; 
+  line-height: 40rpx;
+   color:#000;
+   text-align: left;
+   font-size: 90%;
+   letter-spacing: 6rpx;
+   padding: 3rpx;
+}
+.start-task-cue-text{
+  position: fixed;
+  bottom: 20%;
+  bottom: 200rpx;
+  width: 80%;
+  color:#fff;
+  letter-spacing: 5rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.shopping{
+  width: 60rpx;
+  height:60rpx;
+  position: fixed;
+  top: 880rpx;
+  /* bottom:230rpx;  */
+  /* right:0; */
+  left:30rpx;
+}
+/* .shopping image{
+  border: 1rpx solid red;
+} */
+.img-plus-style {  
+  height: 60rpx;  
+  width: 60rpx;  
+  position: absolute;  
+  bottom: 0rpx;  
+  right: 0rpx;  
+  z-index: 100;  
+}  
+.img-text{
+    height: 60rpx;  
+  width: 150rpx;  
+  line-height: 60rpx;
+      position: absolute;  
+  bottom: 0rpx;  
+  right: 0rpx;  
+  opacity: 0;
+  border: 1rpx solid yellow;
+  text-align: center;
+  background: green;
+  font-size: 90%;
+  color: #fff;
+}  
+.img-style {  
+  height: 76rpx;  
+  width: 76rpx;  
+  position: absolute;  
+  bottom: 0rpx;  
+  right: 0rpx;  
+  opacity: 0;
+   /* border: 1rpx solid #faa0ea; */
+  border-radius: 50%;
+}
+/*送礼物的效果展示方式*/
+.giving-gift-img{
+  position: relative;
+  top: 10%;
+   /* background: green;  */
+  width: 100%;
+  height: 600rpx;
+
+}
+.giving-gift-img image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.giving-gift-text{
+  position: fixed;
+  bottom: 20%;
+  bottom: 200rpx;
+  width: 80%;
+  color:#fff;
+  letter-spacing: 5rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.pp-daojishi.date{
+  position: relative;
+  top: 50rpx;
+}
+.mask.mask-bg image{
+  width: 100%;
+  height:100%;
+  display: block;
+}
+.icon.w {
+width: 85%;
+height: 10%;
+position: relative;
+}
+.icon.w .w text{
+width:90%;
+height:50rpx;
+line-height: 50rpx;
+position: absolute;
+top: 0;
+left:50rpx;
+/* font-size: 60%; */
+/* border: 1rpx solid red; */
+}

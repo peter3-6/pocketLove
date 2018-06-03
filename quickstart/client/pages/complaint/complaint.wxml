@@ -1,0 +1,14 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<!--   <view class='section top'>
+    <input name="complaintName" maxlength='11' value="" placeholder="被投诉人昵称" placeholder-style="color:#9c9c9c" />
+
+  </view> -->
+  <view class='section bot'>
+    <textarea maxlength='200' name="complaintDescribe" value="" type="text" placeholder="投诉建议描述" placeholder-class='input-placeholder' />
+
+  </view>
+  <view class="btn-area">
+    <button class="submit" formType="submit">提交</button>
+    <button class="reset" formType="reset">重置</button>
+  </view>
+</form>

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/matching/matching",
+    "pages/task/task",
+    "pages/my/my",
+    "pages/cart/cart",
+    "pages/upTaskText/upTaskText",
+    "pages/giveList/giveList",
+    "pages/a/a",
+    "pages/messageBoard/messageBoard",
+    "pages/leaveWord/leaveWord",
+    "pages/charm/charm",
+    "pages/perfectInfo/perfectInfo",
+    "pages/startTask/startTask",
+    "pages/charmInfo/charmInfo",
+    "pages/charmInfos/charmInfos",
+    "pages/canvas/canvas",
+    "pages/modifyInfo/modifyInfo",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/message/message",
+    "pages/complaint/complaint",
+    "pages/taskDetails/taskDetails",
+    "pages/upTaskImg/upTaskImg",
+    "pages/liuyan/liuyan",
+    "pages/template/template",
+    "pages/orderDetails/orderDetails",
+    "pages/order/order",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#e4c6d4",
+    "navigationBarTextStyle": "#63656a",
+    "navigationBarTitleText": "口袋之恋",
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "networkTimeout": "10000",
+  "debug": false
+}

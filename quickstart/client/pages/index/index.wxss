@@ -1,0 +1,268 @@
+ @import '../template/template.wxss';
+page{
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+}
+image {
+   display: block;
+}
+.headImg {
+   width: 100%;
+    /* height: 450rpx;  */
+    height: 420rpx; 
+}
+.an-crown {
+   width: 168rpx;
+   height: 81rpx;
+   margin: 0 auto;
+   margin-top: 6rpx;
+}
+.nickName {
+   width: 100%;
+   line-height: 46rpx;
+   font-weight: bold;
+   display: block;
+   text-align: center;
+   margin-top: 6rpx;
+}
+#charm-value {
+   width: 446rpx;
+   height:70rpx;
+   overflow: hidden;
+   margin: 0 auto;
+   border-top: 2rpx solid #d0cbd2;
+   border-bottom: 2rpx solid #d0cbd2;
+   margin-top: 6rpx;
+}
+#charm-value view {
+   width: 49%;
+   height: 100%;
+   line-height: 80rpx;
+   font-size: 126%;
+   font-weight: bold;
+   text-align: center;
+   display: inline-block;
+}
+.charm {
+   color: #6e3181;
+}
+.nickName, .charm-value {
+   color: #ffb403;
+}
+.icon.w {
+   width: 56%;
+   height: 44rpx;
+   margin: 16rpx auto;
+}
+.w {
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+.icon image {
+   width: 46rpx;
+   height: 46rpx;
+   display: block;
+}
+.icon text {
+   width: 94%;
+   height: 46rpx;
+   line-height: 46rpx;
+   font-size: 32rpx;
+   font-family: monospace;
+   display: block;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   padding-left: 10rpx;
+}
+.pp-daojishi {
+   width: 100%;
+   height: 50rpx;
+   height: 60rpx;
+   line-height: 50rpx;
+   font-size: 26rpx;
+   margin: 3rpx auto;
+   display: block;
+   text-align: center;
+}
+
+.pp-daojishi text {
+   background: #e4c6d4;
+   color: #fff;
+   padding: 2rpx 6rpx;
+}
+
+#btn {
+   width: 600rpx;
+   margin: 80rpx auto 0 auto;
+}
+.btn { 
+   height: 88rpx;
+   line-height: 88rpx;
+   width: 100%;
+   background: #e4c6d4;
+   margin-bottom: 16rpx;
+   color: #fff;
+   letter-spacing: 10rpx;
+} 
+
+.modalBut{
+   width: 60%;
+   height: 90rpx;
+   background: #e4c6d4;
+   color:#fff;
+   margin-top: 30rpx;
+  
+}
+/*button[disabled][type="default"], wx-button[disabled]:not([type]){
+   color: #fff;
+      background-color:#e4c6d4;
+}*/
+/*.modal-main.home-modal{
+    display: flex;
+   flex-direction: column;  
+}*/
+.modal-main.home-modal text{
+   display:flex;
+   height: 100%;
+   /*background-color: yellow;*/
+   /*color: #000;*/
+   line-height: 60rpx;
+   text-align: left;
+   padding:10rpx 20rpx
+}
+
+
+
+.modal-main.home-modal{
+   background: #fff;
+   position: relative;
+   top:10%;
+   /* margin: 60rpx; */
+    padding-bottom: 30rpx;
+    border-radius: 8rpx;
+}
+.modal{
+   width: 70%;
+   position: fixed;
+   top: 25%;
+   background: #fff;
+   left: 10%;
+   padding: 30rpx;
+   border-radius: 8rpx;
+   color: #fff;
+}
+.modalViem.view{
+  /* background: yellow; */
+  top:10%;
+  height: 70%;
+}
+.modalViem.view text{
+  /* background: red; */
+  display: flex;
+}
+.textBut{
+  /* display: flex; */
+  height:100%;
+}
+.text{
+  /*background: red;*/
+  /*height: 50rpx;*/
+  display: flex;
+  height: 160rpx;
+}
+.pp-daojishi text.date{
+  padding: 6rpx 16rpx;
+  background: #e4c6d4;
+}
+.shopping{
+  width: 60rpx;
+  height:60rpx;
+  position: fixed;
+  /* bottom:244rpx;  */
+   bottom:196rpx;  
+  /* right:0; */
+   left:30rpx; 
+  /* right:24rpx; */
+}
+/* .shopping image{
+  border: 1rpx solid red;
+} */
+.img-plus-style {  
+  height: 60rpx;  
+  width: 60rpx;  
+  position: absolute;  
+  bottom: 0rpx;  
+  right: 0rpx;  
+  z-index: 100;  
+}  
+.img-text{
+    height: 60rpx;  
+  width: 150rpx;  
+  line-height: 60rpx;
+  position: absolute;  
+  bottom: 0rpx;  
+  right: 0rpx;  
+  opacity: 0;
+  border: 1rpx solid yellow;
+  text-align: center;
+  background: green;
+  font-size: 90%;
+  color: #fff;
+}  
+.img-style {  
+  height: 76rpx;  
+  width: 76rpx;  
+  position: absolute;  
+  bottom: 0rpx;  
+  right: 0rpx;  
+  opacity: 0;
+  /* border: 1rpx solid #faa0ea; */
+  border-radius: 50%;
+}
+.giving-gift-img{
+  position: relative;
+  top: 10%;
+   background: green; 
+  width: 100%;
+  height: 600rpx;
+
+}
+.giving-gift-img image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.giving-gift-text{
+  position: fixed;
+  bottom: 50%;
+  /* bottom: 200rpx; */
+  width: 80%;
+  color:#fff;
+  letter-spacing: 5rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+/*.pp-daojishi.date{
+  position: relative;
+  top: 50rpx;
+}*/
+.mask.mask-bg {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: -30rpx;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  z-index: 9999;
+  margin: 0;
+  padding: 38rpx 10%;
+}
+.modal-bg image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}

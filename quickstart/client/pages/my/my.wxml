@@ -1,0 +1,64 @@
+<!-- 个人信息  -->
+<view class='icon' bind:tap='userInfo'>
+<image src='/images/edit.png'></image>
+</view>
+<view class='login-but'>
+ <!--  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bind:getuserinfo="getUserInfo">开始恋爱之旅</button>
+  <block wx:else> -->
+  <view id="header" class="header" bind:tap='user'>
+    <view class="header-l">
+      <image src="{{headImg}}"></image>
+    </view>
+    <view class="header-r">
+      <text class="header-r-bot"> 昵称： {{nickName}} </text>
+    </view>
+    <view class='header-bot header-r'>
+    <text class="header-r-bot" style='text-align:right;'> {{charm}}：{{charismata}}</text>
+      <text class="header-r-bot"  style='text-align:left;padding-left:50rpx'>星座：{{constellation}}</text>
+    </view>
+  </view>
+  <!-- </block> -->
+</view>
+<!-- 消息中心 -->
+ <!-- <view class="my-row" bind:tap='userInfo'>
+  <view class="my-row-l-img">
+    <image src="/../sex.png"></image>
+  </view>
+  <text class='my-order'> 消息中心 </text>
+  <text class='dayuhao'>></text>
+</view>  -->
+<!-- 我的留言 -->
+ <navigator url="../../pages/messageBoard/messageBoard" open-type="navigate" hover-class="other-navigator-hover">
+<view class="my-row">
+  <text class='my-order'>留言板 </text>
+</view>
+</navigator>
+<!-- 我的订单 -->
+<!-- <view class="my-row" bind:tap='order'>
+  <view class="my-row-l-img">
+    <image src="order.png"></image>
+  </view>
+  <text class='my-order'> 我的订单 </text>
+  <text class='dayuhao'>></text>
+</view> -->
+<!-- 我的礼物 -->
+<view class="my-row" bind:tap='gift'>
+  <text class='my-order'> 我的礼物 </text>
+</view>
+<!-- 投诉建议 -->
+<view class="my-row" bind:tap='complaint'>
+  <text class='my-order'> 投诉</text>
+</view>
+<view class="my-row" bind:tap='clearCache'>
+  <text style='padding-left: 70rpx;'>清理缓存</text>
+</view>
+<!-- <view class="my-row" bind:tap='gengxin'>
+  <text style='padding-left: 70rpx;'>更新</text>
+</view> -->
+<!-- 关于口袋之恋 -->
+<view class="my-row" bind:tap='abc'>
+  <text style='padding-left: 70rpx;'>版本号1.2.27 </text>
+</view>
+<!--  + 号 -->
+ <import src='../template/template.wxml'></import> 
+<template is='shopping' data="{{animCollect,toIndexPage,animationcollectA,messageImg,animationcollectB,messageTap,animInput,myGiftListImg,giveList,myGiftListTap,animTranspond,animationcollectC,plus,animPlus,plusTap}}"></template>

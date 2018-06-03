@@ -1,0 +1,18 @@
+<!-- <view id="back" bind:tap="back"> 返回 </view> -->
+<view class='title'>给ta留言</view>
+<view class="section">
+  <form bindsubmit="formSubmit">
+    <!--  <textarea maxlength='60' placeholder="留言内容" name="textarea"/>
+    <view class='cue'>{{cue}}</view> -->
+    <radio-group name="radio-group">
+      <block wx:for="{{datas}}" wx:for-index wx:for-item>
+        <radio value="{{item.fdMessageContent}}" color="#e4c6d4">{{item.fdMessageContent}}</radio>
+      </block>
+     <!--   <import src='../template/template.wxml'></import>
+      <template is="liuYan" data="{{...datas}}"></template> -->
+    </radio-group>
+      <view class="section button">
+        <button form-type="submit">提交 </button>
+      </view>
+  </form>
+</view>

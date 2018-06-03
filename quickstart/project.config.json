@@ -1,0 +1,28 @@
+{
+	"client": "./client",
+	"svr": "./server",
+	"appid": "wx029d2decd55a29ce",
+	"projectname": "pocketLOVE",
+	"libVersion": "1.9.1",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

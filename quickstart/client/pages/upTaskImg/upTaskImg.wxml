@@ -1,0 +1,20 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <!--以文本的形式展现的任务  -->
+  <view class='section bot'>
+    <!-- <block wx:if="{{if_imgPath}}"> -->
+     <block wx:if="{{if_imgPath}}">
+      <view class="upTaskT">
+        {{missionName}}
+      </view>
+    </block>
+    <!--以图片的形式展现的任务  -->
+    <!-- <block wx:elif="{{!if_imgPath}}"> -->
+     <block wx:elif="{{!if_imgPath}}"> 
+      <image src='{{images}}{{fdId}}'  bind:tap="clickImg" class='a'></image>
+    </block>
+  </view>
+  <text class='cue'>{{cue}}</text>
+  <view class="btn-area">
+    <button class="submit" formType="submit">上传</button>
+  </view>
+</form>

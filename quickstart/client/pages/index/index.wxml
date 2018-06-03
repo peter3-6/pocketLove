@@ -1,0 +1,25 @@
+  <import src='../template/template.wxml'></import>
+<view>
+  <!-- <import src='../template/template.wxml'></import> -->
+  <template is='personalInfo' data="{{...personalInfo,...userInfo,headImg,school,nickName,constellation,charismata,fdGender,userLabel,signature,second,sec,day,d,hour,h,minute,min,start,display,startDisplay,djsText,Date,DateLeft,DateRight}}"></template>
+  <view id='btn'>
+   <form  bindsubmit="formSubmit" report-submit>
+    <!-- <button class='btn' bind:tap="startEnroll" disabled='{{disabled}}' style="color: {{color}};background: {{background}}">{{button}}</button> -->
+    <button class='btn' formType="submit" disabled='{{disabled}}' style="color: {{color}};background: {{background}}">{{button}}</button>
+    </form>
+  </view>
+</view>
+<!--  <import src='../template/template.wxml'></import>
+<template is='modalCue' data="{{modalCueImg,regCueT,regCueB,modalTap,modal,modalImg,a,b}}"></template> 
+ <template is='messageRemind' data="{{remindTitle,remindContent,remindModalTap,remindModal,txet}}"></template>  -->
+<!--  + 号 -->
+ <!-- <import src='../template/template.wxml'></import>  -->
+<template is='shopping' data="{{animCollect,toIndexPage,animationcollectA,messageImg,animationcollectB,messageTap,animInput,myGiftListImg,giveList,myGiftListTap,animTranspond,animationcollectC,plus,animPlus,plusTap}}"></template>
+<!-- 背景半透明 -->
+<view class="modal-bg" hidden="{{modalHome}}" bind:tap="{{modalTap}}">
+    <image style="" src="https://koudaizhilian-1254460722.cosbj.myqcloud.com/images/welcome.png"></image>
+</view>
+<!-- 提示礼物 -->
+<view class="mask mask-bg" hidden="{{givingGift}}" bind:tap="{{givingGiftTap}}">
+  <text class="giving-gift-text"> {{givingGiftText}} </text>
+</view>

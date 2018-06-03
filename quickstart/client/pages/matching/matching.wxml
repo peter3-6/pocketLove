@@ -1,0 +1,61 @@
+<view>
+   <import src='../template/template.wxml'></import>
+   <template is='macthing' data="{{...personalInfo,...userInfo,headImg,school,nickName,constellation,charismata,fdGender,userLabel,signature,second,sec,day,d,hour,h,minute,min,start,display,startDisplay,djsText,Date,DateLeft,DateRight}}"></template>
+   <view id='btn' >
+   <form  bindsubmit="formSubmit" report-submit>
+      <!-- <button class='btn' bind:tap="matching" disabled='{{disabled}}' style="color: {{color}}">{{button}}</button> -->
+      <button class='btn' formType="submit" disabled='{{disabled}}' style="color: {{color}}">{{button}}</button>
+      </form>
+   </view>
+</view>
+<!-- 匹配成功与失败的交互效果 -->
+<view class="mask mask-bg" hidden="{{mask}}" bindtap="{{maskBut}}">
+  <image  src="{{Img}}" ></image>
+</view>
+<!-- 匹配成功后，对方的信息展示 -->
+<view class="mask modal-bg" hidden="{{maskImg}}">
+  <view class='maskImg' bindtap="{{ maskImgTap }}">
+    <image src="{{maskImage}}"></image>
+    <view class='matchingSuccessZ'>
+      <image class='headImg' src="{{_headImg}}"></image>
+      <image class='an-crown' src="{{_symbolize}}"></image>
+      <text class='nickName'>{{_nickName}}</text>
+      <view id='charm-value' style=' border-top: 2rpx solid {{border}};border-bottom: 2rpx solid {{border}};'>
+        <view class="charm" style=' border-right: 2rpx solid {{border}}'>
+          {{_charmVue}}
+        </view>
+        <view class="charm-value">
+          {{_charismata}}
+        </view>
+      </view>
+      <view class='icon w'>
+        <view class='w'>
+          <image src='{{_constellationImg}}'></image>
+          <text>{{colon}}{{_constellation}}</text>
+        </view>
+      </view>
+      <view class='icon w'>
+        <view class='w'>
+          <image class="sex" src='{{_sex}}'></image>
+          <text>{{colon}}{{_fdGender}}</text>
+        </view>
+      </view>
+      <view class='icon w'>
+        <view class='w'>
+          <image src='{{_label}}'></image>
+          <text>{{colon}}{{_userLabel}}</text>
+        </view>
+      </view>
+      <view class='icon w'>
+        <view class='w'>
+          <image src='{{_autograph}}'></image>
+          <text>{{colon}}{{_signature}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <text class="macth-cue-text"> {{macthCueText}}</text>    
+</view>
+<!--  + 号 -->
+ <import src='../template/template.wxml'></import> 
+<template is='shopping' data="{{animCollect,toIndexPage,animationcollectA,messageImg,animationcollectB,messageTap,animInput,myGiftListImg,giveList,myGiftListTap,animTranspond,animationcollectC,plus,animPlus,plusTap}}"></template>

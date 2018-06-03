@@ -1,0 +1,44 @@
+@import '../template/template.wxss';
+page{
+	background: #e6e6e6;
+	/*background: #fff;*/
+	letter-spacing: 6rpx;
+}
+.section{
+	width: 100%;
+	margin: 0 auto;
+}
+radio{
+	display: block;
+	margin-bottom: 4rpx;
+	height: 88rpx;
+	line-height: 88rpx;
+	margin-bottom: 4rpx;
+	overflow: hidden;
+	background: #fff;
+	padding-left: 4%;
+}
+.section.button{
+	background: #fff;
+	padding: 20rpx 0 40rpx 0;
+}
+button{
+	margin-top: 20rpx;
+	width:90%;
+	background: #e4c6d4;
+	color: #fff;
+	letter-spacing: 30rpx;
+	font-size: 110%;
+}
+#back{
+	width: 140rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	position: fixed;
+	top:2%;
+	left: 3%;
+	font-size: 100%;
+	letter-spacing: 10rpx;
+	color: #000;
+	border: none;text-align: center;
+}

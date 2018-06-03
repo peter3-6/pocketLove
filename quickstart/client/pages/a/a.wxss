@@ -1,0 +1,144 @@
+.wux-picker{
+	height: 240px
+}
+.wux-picker .wux-picker-view{
+	height: 210px
+}
+page{
+    background: url('https://koudaizhilian-1254460722.cosbj.myqcloud.com/images/d.jpg') 100% 100% no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #e4c6d4;
+  text-align: center;
+  line-height: 80rpx;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background: #fff;
+}
+.swiper-tab-list {
+  font-size: 40rpx;
+  display: inline-block;
+  width: 50%;
+  color: #000;
+}
+.on {
+  color: #e4c6d4;
+  border-bottom: 5rpx solid #e4c6d4;
+}
+.swiper-box {
+  display: block;
+  height:1100rpx;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 80rpx;
+}
+.swiper-item{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.form{
+	width: 60%;
+	height:58%;
+	display: block;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+.section{
+	border-bottom: 1rpx solid #000;
+  /* margin: 20rpx 0; */
+}
+.section .picker {
+  background-color: transparent;
+  border-bottom: 1px #d9d9d9 solid; 
+  padding:30rpx 20rpx 30rpx 0;
+  font-size:100%;
+}
+.condition-left,.picker.condition-right{
+	display: inline-block;
+	border: none;
+}
+.condition-left{
+	color: red;
+	width: 10%;
+	text-align: center;
+	padding:25rpx 0rpx 25rpx 0;
+}
+.picker.condition-right{
+	width: 80%;
+}
+checkbox-group{
+	margin-top: 16rpx;
+	margin-bottom: 16rpx;
+	font-size: 80%;
+	padding-left: 6%;
+}
+checkbox .wx-checkbox-input{
+ width: 40rpx;
+  height: 40rpx;
+ border-radius: 50%;
+ border: 1rpx solid #000;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked:before{
+	color: #893f9e
+}
+text{
+  height: 20rpx;
+  line-height: 30rpx;
+  text-align: center;
+	color:red;
+  display: block;
+  margin: 0 auto;
+  font-size: 80%;
+  margin-top: 16rpx;
+}
+.btn-area button {
+   margin-top:20rpx; 
+  color: #fff;
+  background: #e4c6d4;
+  letter-spacing: 30rpx;
+}
+/*交互效果*/
+.modal-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+  overflow: hidden;
+  z-index: 9999;
+}
+.modalViem{
+  position: absolute;
+  top:26%;
+  left:10%;
+  width: 80%;
+  height: 80%;
+  height:50%;
+}
+.text.t{
+  height: 70rpx;
+}
+.text{
+  display: flex;
+  width:100%;
+  height: 70rpx; 
+  line-height: 70rpx;
+  color:#fff;
+  text-align: center;
+  font-size: 90%;
+  letter-spacing: 3rpx;
+  background-color: transparent;
+  margin: 6rpx auto;
+  flex-direction: column;
+}
+.modal-bg image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}

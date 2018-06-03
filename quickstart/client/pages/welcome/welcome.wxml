@@ -1,0 +1,45 @@
+<!-- <view bind:tap='welcomeTap'> -->
+<view>
+  <image class='topImg' src='{{welcomeImg}}'></image>
+
+  <!-- <image class='welcome' src="{{welcomeImg}}" bindload='welcomeTLoad'></image>  -->
+  <view class='explain'>
+    <view class='top-explain'>
+      <view class="mui-row first">
+        <label class="aaaa">每期开放时间:</label>
+         <text>每期开始前会在口袋青春</text> 
+          <text>公众号图文发布</text>  
+      </view>
+       <!-- <view class="mui-row aaa">
+         <label class="aaaa">每期开放时间:</label> 
+        <text>每期都会在口袋青春公众号发布</text>
+      </view> -->
+      <view class="mui-row">
+        <label class="aaaa">每期报名时长:</label>
+        <text>24小时</text>
+      </view>
+      <view class="mui-row">
+        <label class="aaaa">每期活动时间:</label>
+        <text>7天</text>
+      </view>
+    </view>
+    <view class='top-line'></view>
+     <view class='btn-explain'>
+      <text>“口袋之恋”是口袋青春为单身青年倾心打造的轻社交小程序，根据每人填写的报名信息、个人简介以及匹配要求，帮你找出最适合的报名者进行匹配，并在7天时间内共同完成我们精心设计的一系列任务，帮助两人从相遇到相识，创造未来有无限可能的——“缘分”！</text>
+    </view> 
+  </view>
+
+   <form bindsubmit="startSign"> 
+
+   <button formType="submit">我要报名</button> 
+  <!-- <image class='welcome' src="{{welcomeImg}}"></image>  -->
+  <!-- <button class='start' formType="submit">
+      <image src='/images/start.png'></image>
+    </button>   -->
+  <!-- <button class='butVio' bind:tap='butVio'>点击进入查看视频</button>   -->
+  <!-- <button formType="submit">
+        <view class='start'>
+      <image src='/images/start.png'></image>
+    </view></button> -->
+   </form> 
+</view>

@@ -1,0 +1,69 @@
+
+<view class='w'>
+	<view class='section user'>
+		<view>头像：</view>
+		<view><image  src="{{headImg}}" ></image>	</view>			
+		
+	</view>
+	<view class='section'>
+		<view class='fl'>昵称：</view>
+		<view class='fr section'>
+			<text value="" placeholder='{{nickName}}' placeholder-class='input-placeholder' disabled="{{disabled}}">{{nickName}}</text>		
+		</view>
+	</view>
+	<view class='section'>
+		<view class='fl'>个性签名：</view>
+		<view class='fr section'>
+			<input value="" placeholder='{{userLabel}}' placeholder-class='input-placeholder' disabled="{{disabled}}"></input>	
+		</view>
+	</view>
+<!-- start -->
+
+	<view class='section'>
+		<view class='fl'>性别：</view>
+		<view class='fr section'>
+			<input value="" placeholder='{{fdGender}}' placeholder-class='input-placeholder' disabled="{{disabled}}"></input>	
+		</view>
+	</view>
+
+		<view class='section'>
+		<view class='fl'>省份：</view>
+		<view class='fr section'>
+			<input value="" placeholder='{{province}}' placeholder-class='input-placeholder' disabled="{{disabled}}"></input>	
+		</view>
+	</view>
+
+		<view class='section'>
+		<view class='fl'>市/区：</view>
+		<view class='fr section'>
+			<input value="" placeholder='{{city}}' placeholder-class='input-placeholder' disabled="{{disabled}}"></input>	
+		</view>
+	</view>
+
+		<view class='section'>
+		<view class='fl'>星座：</view>
+		<view class='fr section'>
+			<input value="" placeholder='{{constellation}}' placeholder-class='input-placeholder' disabled="{{disabled}}"></input>	
+		</view>
+	</view>
+		<view class='section' wx:if="{{school!=null&&school!=undefined&&school!=''}}">
+		<view class='fl'>学校：</view>
+		<view class='fr section'>
+			<input value="" placeholder='{{school}}' placeholder-class='input-placeholder' disabled="{{disabled}}"></input>	
+		</view>
+	</view>
+
+	<!-- end -->
+	<view class='section' style='border: none'>
+		<view class='fl'>标签：</view>
+		<view class='fr section'>
+			<input value="" placeholder='{{signature}}' placeholder-class='input-placeholder' disabled="false"></input>		
+		</view>
+	</view>
+</view>
+<!-- 修改用户信息 -->
+  <navigator url="../../pages/modifyInfo/modifyInfo?school={{school}}" open-type="navigate" hover-class="other-navigator-hover">
+<view class="my-row" bind:tap='userInfo'>
+  <text class='my-order'>修改信息</text>
+</view> 
+</navigator>

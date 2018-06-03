@@ -1,0 +1,65 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">本校排行</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">世界排行</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{deviceHeight-96}}px" bindchange="bindChange">
+  <!-- 本校排行 -->
+  <swiper-item>
+    <scroll-view scroll-y="true" class="weui-panel weui-panel_access" style="height:{{deviceHeight-80}}px;" bindscrolltolower="loadMoreSchool" scroll-top="{{scroll_top}}" scroll-with-animation="{{true}}">
+      <view>
+        <import src="../template/template.wxml"></import>
+        <template is="charmHeader"> </template>
+        <view class="IMG">
+          <image class="first" src="{{first}}"></image>
+          <image class="second" src="{{second}}"></image>
+          <image class="third" src="{{third}}"></image>
+        </view>
+        <block wx:for="{{schools}}">
+          <view id='main'>
+            <text>{{index+1}}</text>
+            <text class="world-nickName">{{item.nickName}}</text>
+            <text>{{item.charismata}}</text>
+          </view>
+        </block>
+      </view>
+      <view class="loading">
+        <loading hidden="{{switcha}}">
+          正在加载中...
+        </loading>
+        <view class="remind">{{remind}}</view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!-- 世界排行 bindscrolltolower-->
+  <!-- <swiper-item style="margin-bottom:1010rpx;"> -->
+  <swiper-item>
+    <scroll-view scroll-y="{{scrollTrue}}" class="weui-panel weui-panel_access" style="height:{{deviceHeight-96}}px;" bindscrolltolower="loadMoreWorlds" scroll-top="{{scroll_top}}" scroll-with-animation="{{scrollTrue}}">
+      <view>
+        <import src="../template/template.wxml"></import>
+        <template is="charmHeader"> </template>
+        <view class="IMG">
+          <image class="first" src="{{first}}"></image>
+          <image class="second" src="{{second}}"></image>
+          <image class="third" src="{{third}}"></image>
+        </view>
+        <block wx:for="{{worlds}}">
+          <view id='main'>
+            <text>{{index+1}}</text>
+            <text class="world-nickName">{{item.nickName}}</text>
+            <text>{{item.charismata}}</text>
+          </view>
+        </block>
+      </view>
+      <!-- <view class="loading">
+        <loading hidden="{{switcha}}">
+          正在加载中...
+        </loading>
+        <view class="remind">{{remind}}</view>
+      </view> -->
+    </scroll-view>
+
+  </swiper-item>
+</swiper>
+<!--  + 号 -->
+<import src='../template/template.wxml'></import>
+<template is='shopping' data="{{animCollect,toIndexPage,animationcollectA,messageImg,animationcollectB,messageTap,animInput,myGiftListImg,giveList,myGiftListTap,animTranspond,animationcollectC,plus,animPlus,plusTap}}"></template>

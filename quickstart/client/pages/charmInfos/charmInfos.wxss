@@ -1,0 +1,78 @@
+page{
+	width: 100%;
+	height: 100%;
+	background: green;
+}
+.charm-info{
+	  margin: 75px auto;
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: #e4c6d4;
+}
+.charm-in {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+}
+.charm-info-img{
+	width: 70px;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: green;
+}
+
+/*fabulous css start*/
+.charm-info-footer{
+	width: 240rpx;
+	height: 80rpx;
+	position: absolute;
+	bottom: -160rpx;
+	right: 0;
+
+}
+.charm-info-footer .charm-info-foot{
+	position: relative;
+	width: 250rpx;
+	height: 80rpx;
+	background: rgba(204,204,204,.6);
+	border-top-left-radius:50rpx;
+	border-top-right-radius:50rpx;
+	border-bottom-left-radius:50rpx;
+	border-bottom-right-radius:50rpx;
+}
+.charm-info-footer .charm-info-foot .charm-info-footer-img{
+	width: 60rpx;
+	height:60rpx;
+	position: absolute;
+	/*background: red;*/
+	top:9rpx;
+	left: 20rpx;
+}
+.charm-info-footer .charm-info-foot .charm-info-footer-text{
+	width: 160rpx;
+	height: 80rpx;
+	display: block;
+	line-height: 80rpx;
+	position: absolute;
+	right: 0;
+	top:0;
+	font-size: 90%;
+	text-align: left;
+}
+/*fabulous css end*/

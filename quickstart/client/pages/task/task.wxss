@@ -1,0 +1,201 @@
+@import '../template/template.wxss';
+
+.swiper-box {
+  display: block;
+  height: 1150rpx;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 80rpx;
+  margin-bottom: 200rpx;
+}
+
+.swiper-box view {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; *//* height: 100%; *//* background: #f2f2f2; */
+}
+
+#wrap-content {
+  height: 150rpx;
+  width: 100%;
+  margin-bottom: 15rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+
+#wrap-content view {
+  background: #fff;
+  padding: 10rpx 0;
+}
+
+#wrap-content .left {
+  width: 28%;
+  padding: 10rpx;
+  flex-shrink: 0;
+}
+
+#wrap-content .left image {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap-content .centre {
+  width: 70%;
+  padding-left: 10%;
+}
+
+.centre text {
+  flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.centre .text-top {
+  height: 100%;
+  font-size: 80%;
+  line-height: 66rpx;
+  color: #000;
+  text-align: left;
+}
+
+.centre .text-cen {
+  font-size: 15px;
+  color: #b3b3b3;
+  overflow: hidden;
+  height: 60%;
+}
+
+#wrap-content .centre .text-but {
+  font-size: 13px;
+  color: #bfbfbf;
+  height: 20%;
+  padding: 0;
+}
+
+#wrap-content .centre .text-but icon {
+  width: 50rpx;
+  font-size: 6px;
+  display: inline;
+  color: #000;
+  background: #fff;
+}
+
+#wrap-content .centre .text-but text {
+  height: 50rpx;
+  display: block;
+}
+
+#wrap-content .right {
+  width: 20%;
+}
+
+#wrap-content .right view {
+  width: 130rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #e4c6d4;
+  padding: 0 0;
+  margin: auto auto;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+}
+
+ .right button {
+  width: 130rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #e4c6d4;
+  padding: 0 0;
+  margin: auto auto;
+  color: #fff;
+} 
+
+.shopping {
+  width: 60rpx;
+  height: 60rpx;
+  position: fixed;
+  bottom: 94rpx;
+  left: 24rpx;
+}
+
+.img-plus-style {
+  height: 60rpx;
+  width: 60rpx;
+  position: absolute;
+  bottom: 0rpx;
+  right: 0rpx;
+  z-index: 100;
+}
+
+.img-text {
+  height: 60rpx;
+  width: 150rpx;
+  line-height: 60rpx;
+  position: absolute;
+  bottom: 0rpx;
+  right: 0rpx;
+  opacity: 0;
+  border: 1rpx solid yellow;
+  text-align: center;
+  background: green;
+  font-size: 90%;
+  color: #fff;
+}
+
+.img-style {
+  height: 76rpx;
+  width: 76rpx;
+  position: absolute;
+  bottom: 0rpx;
+  right: 0rpx;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.mask.mask-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0%;
+  overflow: hidden;
+  z-index: 9999;
+  margin: 0;
+  padding: 0rpx 0%;
+}
+
+.mask.mask-bg image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.loading {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  z-index: 9999;
+  border-bottom: 2rpx solid #e5e5e5;
+  font-size: 80%;
+  color: #000;
+}
+
+.remind {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#fromBut {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#fromBut::after {
+  width: 0;
+}

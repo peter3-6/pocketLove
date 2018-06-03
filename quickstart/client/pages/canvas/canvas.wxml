@@ -1,0 +1,13 @@
+<import src='../template/template.wxml' />
+<view class="cropper-wrapper">
+  <template is="canvas" data="{{...cropperOpt}}" />
+  <form report-submit bindsubmit="formSubmit">
+    <view class="cropper-buttons">
+      <view class="upload" bindtap="uploadTap">上传图片</view>
+      <button class="getCropperImage" hover-class="button-hover" formType="submit" hover-stay-time="20">
+      <!-- <button class="getCropperImage" hover-class="button-hover" catchtap="upCropperImage" hover-stay-time="20"> -->
+        确认上传
+      </button>
+    </view>
+  </form>
+</view>

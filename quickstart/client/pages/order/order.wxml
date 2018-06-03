@@ -1,0 +1,5 @@
+<import src='../template/template.wxml'></import>
+<template is="orderList"></template>
+<template is="orderList"></template>
+<template is="orderList"></template>
+<template is="orderList"></template>

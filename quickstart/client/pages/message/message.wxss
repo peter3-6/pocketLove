@@ -1,0 +1,76 @@
+@import '../template/template.wxss';
+page{
+	background: #e6e6e6;
+	position: relative;
+}
+.section{
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+  padding: 0 5%;
+  margin-bottom: 3rpx;
+}
+.section textarea{
+	/*background: green;*/
+	width: 100%;
+	height: 100%;
+	line-height:60rpx;
+	margin-bottom: 15rpx;
+	text-align: center;
+	overflow: hidden;
+/*	text-overflow: ellipsis;
+	white-space: nowrap;*/
+}
+.section text{
+	height: 60rpx;
+	line-height: 60rpx;
+	/* display: block; */
+	/*background: red;*/
+	text-align: right;
+	padding-right: 6%;
+	color: #999;
+}
+/*送礼物的效果展示方式*/
+.giving-gift-img{
+  position: relative;
+  top: 10%;
+   background: green; 
+  width: 100%;
+  height: 600rpx;
+
+}
+.giving-gift-img image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.giving-gift-text{
+  position: fixed;
+  bottom: 20%;
+  bottom: 200rpx;
+  width: 80%;
+  color:#fff;
+  letter-spacing: 5rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.mask.mask-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  z-index: 9999;
+  margin: 0;
+  /*padding: 38rpx 10%;*/
+}
+.mask.mask-bg text{
+	color: #fff;
+	display: flex;
+	border: 1rpx solid red;
+	text-align: center;
+	margin-top: 50%;
+
+}
